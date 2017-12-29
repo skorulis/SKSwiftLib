@@ -1,0 +1,6 @@
+use_frameworks!
+target 'SKSwiftLib_Tests' do
+  pod 'SKSwiftLib', :path => '../'
+  
+  
+end
