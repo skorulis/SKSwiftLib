@@ -1,0 +1,30 @@
+PODS:
+  - PromiseKit (4.5.0):
+    - PromiseKit/Foundation (= 4.5.0)
+    - PromiseKit/QuartzCore (= 4.5.0)
+    - PromiseKit/UIKit (= 4.5.0)
+  - PromiseKit/CorePromise (4.5.0)
+  - PromiseKit/Foundation (4.5.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.5.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.5.0):
+    - PromiseKit/CorePromise
+  - SKSwiftLib (0.1.0):
+    - PromiseKit
+
+DEPENDENCIES:
+  - PromiseKit
+  - SKSwiftLib (from `../`)
+
+EXTERNAL SOURCES:
+  SKSwiftLib:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PromiseKit: 9c1d9f6d7b65e3951a90bea7f407c56972be5d8e
+  SKSwiftLib: f9fba82e2dbc452062495c81f3a1367f0fd6c2ef
+
+PODFILE CHECKSUM: 888ba03b2cdf59a20acb5cf7857d9f079b5873e4
+
+COCOAPODS: 1.4.0.rc.1

@@ -1,5 +1,6 @@
 use_frameworks!
 target 'SKSwiftLib_Tests' do
+    pod 'PromiseKit'
   pod 'SKSwiftLib', :path => '../'
   
   
