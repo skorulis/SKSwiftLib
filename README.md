@@ -5,11 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/SKSwiftLib.svg?style=flat)](http://cocoapods.org/pods/SKSwiftLib)
 [![Platform](https://img.shields.io/cocoapods/p/SKSwiftLib.svg?style=flat)](http://cocoapods.org/pods/SKSwiftLib)
 
-## Example
+This is a loose collection of swift classes that I find useful while developing. It should in no way be considered ready for production use.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
@@ -22,7 +19,7 @@ pod 'SKSwiftLib'
 
 ## Author
 
-skorulis, skorulis@gmail.com
+Alex Skorulis, skorulis@gmail.com
 
 ## License
 
