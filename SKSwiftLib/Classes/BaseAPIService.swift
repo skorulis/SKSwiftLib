@@ -8,6 +8,9 @@
 import UIKit
 import PromiseKit
 
+public typealias URLData = (data: Data, response: URLResponse)
+public typealias URLDataPromise = Promise<URLData>
+
 open class BaseAPIService: NSObject {
 
     public var logResponses:Bool = true
@@ -86,9 +89,9 @@ open class BaseAPIService: NSObject {
     public func dataPromise(req:URLRequest) -> URLDataPromise {
         var p:URLDataPromise? = matching(req: req)
         if p == nil {
-            p = self.session.dataTask(with: req)
+            p = self.session.dataTask(.promise, with: req)
             self.activeRequests[req] = p
-            p?.always {
+            _ = p?.ensure {
                 self.activeRequests.removeValue(forKey: req)
             }
         }
@@ -100,8 +103,8 @@ open class BaseAPIService: NSObject {
         p.catch { error in
             print(error)
         }
-        return p.then { data -> UIImage? in
-            return UIImage(data: data)
+        return p.map { (result:URLData) -> UIImage? in
+            return UIImage(data: result.data)
         }
     }
     

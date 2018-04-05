@@ -45,7 +45,7 @@ open class JSONAPIService: BaseAPIService {
     
     public func handleResponse<T: Decodable>(dataPromise:URLDataPromise) -> Promise<T> {
         let dp:Promise<T> = dataPromise.then {[unowned self] data -> Promise<T> in
-            return self.parseData(data: data, connectionError: nil)
+            return self.parseData(data: data.data, connectionError: nil)
         }
         
         return dp
@@ -61,7 +61,7 @@ open class JSONAPIService: BaseAPIService {
                 let result:T? = try decoder.decode(T.self, from: d)
                 print("Got response \(String(describing: result))")
                 if let r = result {
-                    return Promise(value: r)
+                    return Promise.value(r)
                 } else {
                     let error = NSError(domain: "net", code: 34, userInfo: [:])
                     return Promise(error: error)
