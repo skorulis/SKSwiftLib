@@ -29,6 +29,16 @@ public extension Sequence {
         }
         return categories
     }
+    
+    //Split the array into 2, the first passing the test, the second failing
+    public func split(by filter:(Iterator.Element) -> Bool) -> (passing:[Iterator.Element],failing:[Iterator.Element]) {
+        let array1 = self.filter(filter)
+        let array2 = self.filter { (e) -> Bool in
+            return !filter(e)
+        }
+        return (array1,array2)
+        
+    }
 
 }
 

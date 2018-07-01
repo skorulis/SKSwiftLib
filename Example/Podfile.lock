@@ -17,9 +17,13 @@ DEPENDENCIES:
   - PromiseKit
   - SKSwiftLib (from `../`)
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - PromiseKit
+
 EXTERNAL SOURCES:
   SKSwiftLib:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   PromiseKit: 9c1d9f6d7b65e3951a90bea7f407c56972be5d8e
@@ -27,4 +31,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 3c657dbd4ab6cac3dc15da2fd704c2c3e98ece88
 
-COCOAPODS: 1.4.0.rc.1
+COCOAPODS: 1.5.0

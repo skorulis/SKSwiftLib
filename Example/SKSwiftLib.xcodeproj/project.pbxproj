@@ -110,7 +110,6 @@
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				8B90F9856B22079C5D855764 /* [CP] Embed Pods Frameworks */,
-				490B783595C50302F9AAB1FD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,21 +166,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		490B783595C50302F9AAB1FD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKSwiftLib_Tests/Pods-SKSwiftLib_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8B90F9856B22079C5D855764 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
