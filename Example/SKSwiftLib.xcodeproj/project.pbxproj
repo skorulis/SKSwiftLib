@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		CA760806050D640DACE2DF8C /* Pods_SKSwiftLib_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B17C1CEA816D99C207037C /* Pods_SKSwiftLib_Tests.framework */; };
+		FAA604B7211553CF00612B69 /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA604B6211553CF00612B69 /* CGPointTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,11 +16,11 @@
 		30B17C1CEA816D99C207037C /* Pods_SKSwiftLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKSwiftLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* SKSwiftLib_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKSwiftLib_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8A9E3122870FA338D36EFE3A /* Pods-SKSwiftLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKSwiftLib_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SKSwiftLib_Tests/Pods-SKSwiftLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		ADDEF4BB5A1563BD6847D193 /* Pods-SKSwiftLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKSwiftLib_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKSwiftLib_Tests/Pods-SKSwiftLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C36BE322BC9C32369A10C11F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D4AFD1D0014B215E93208CE6 /* SKSwiftLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SKSwiftLib.podspec; path = ../SKSwiftLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FAA604B6211553CF00612B69 /* CGPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				FAA604B6211553CF00612B69 /* CGPointTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				FAA604B7211553CF00612B69 /* CGPointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
