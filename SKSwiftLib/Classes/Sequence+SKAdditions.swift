@@ -37,8 +37,20 @@ public extension Sequence {
             return !filter(e)
         }
         return (array1,array2)
-        
     }
+    
 
+}
+
+public extension Array {
+    
+    //Temporary until swift 4.2 introduces a better version
+    public func randomItem() -> Element? {
+        if self.count == 0 {
+            return nil
+        }
+        let index = arc4random_uniform(UInt32(self.count))
+        return self[Int(index)]
+    }
 }
 
