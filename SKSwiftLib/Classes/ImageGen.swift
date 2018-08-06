@@ -6,7 +6,7 @@
 //  Copyright © 2018 Skorulis. All rights reserved.
 //
 
-import UIKit
+import CoreGraphics
 
 open class ImageGen: NSObject {
     

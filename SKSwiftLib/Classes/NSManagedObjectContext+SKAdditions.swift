@@ -5,7 +5,6 @@
 //  Created by Alexander Skorulis on 31/12/17.
 //
 
-import UIKit
 import CoreData
 
 public extension NSManagedObjectContext {

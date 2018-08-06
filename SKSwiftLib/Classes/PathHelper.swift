@@ -5,7 +5,7 @@
 //  Created by Alexander Skorulis on 20/7/18.
 //
 
-import UIKit
+import Foundation
 
 public class PathHelper: NSObject {
 

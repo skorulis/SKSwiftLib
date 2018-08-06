@@ -1,7 +1,6 @@
 //  Created by Alexander Skorulis on 24/12/17.
 //  Copyright © 2017 Alex Skorulis. All rights reserved.
 
-import UIKit
 import CoreData
 
 open class CoreDatabaseService: NSObject {
