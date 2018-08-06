@@ -50,6 +50,10 @@ open class ImageGen: NSObject {
     }
     
     #if os(OSX)
+    public func saveImage(name:String,image:UIImage) {
+        //Currently a no op
+    }
+    
     
     #elseif os(iOS)
     public func saveImage(name:String,image:UIImage) {
