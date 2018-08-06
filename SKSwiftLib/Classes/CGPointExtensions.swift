@@ -26,4 +26,11 @@ public extension CGPoint {
         return CGPoint(angle:angle,length:length())
     }
     
+    public func mixed(with:CGPoint,ratio:CGFloat) -> CGPoint {
+        let a2 = 1 - ratio
+        let x = self.x * a2 + with.x * ratio
+        let y = self.y * a2 + with.y * ratio
+        return CGPoint(x: x, y: y)
+    }
+    
 }
