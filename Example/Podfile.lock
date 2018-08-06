@@ -8,8 +8,7 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.3.4):
     - PromiseKit/CorePromise
-  - SKSwiftLib (0.1.0):
-    - PromiseKit
+  - SKSwiftLib (0.1.0)
 
 DEPENDENCIES:
   - PromiseKit
@@ -25,7 +24,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   PromiseKit: e1425568123ec844a944c93f2bcb29d511d39cf5
-  SKSwiftLib: bb2558a2748e1dd617c250fb11233283af8aed61
+  SKSwiftLib: 61addeaa64f586c20d52006de907965d7772496a
 
 PODFILE CHECKSUM: 3c657dbd4ab6cac3dc15da2fd704c2c3e98ece88
 
