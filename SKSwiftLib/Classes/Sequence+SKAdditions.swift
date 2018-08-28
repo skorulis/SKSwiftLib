@@ -52,5 +52,26 @@ public extension Array {
         let index = arc4random_uniform(UInt32(self.count))
         return self[Int(index)]
     }
+    
+    
 }
 
+public extension Array where Element: Equatable {
+    
+    public func next(current:Element) -> Element {
+        let index = self.index(of: current)!
+        if index >= self.count - 1 {
+            return self[0]
+        }
+        return self[index+1]
+    }
+    
+    public func prev(current:Element) -> Element {
+        let index = self.index(of: current)!
+        if index == 0 {
+            return self[self.count - 1]
+        }
+        return self[index-1]
+    }
+    
+}

@@ -52,6 +52,16 @@ open class ImageGen: NSObject {
     #if os(OSX)
     public func saveImage(name:String,image:UIImage) {
         //Currently a no op
+        let bitmapImage = NSBitmapImageRep(data: image.tiffRepresentation!)!
+        let pngData = bitmapImage.representation(using: .png, properties: [:])
+        
+        let desktopURL = FileManager.default.urls(for: .desktopDirectory, in: .userDomainMask).first!
+        let destinationURL = desktopURL.appendingPathComponent("\(name).png")
+        do {
+            try pngData?.write(to: destinationURL, options: Data.WritingOptions.atomic)
+        } catch {
+            print(error)
+        }
     }
     
     
