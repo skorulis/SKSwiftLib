@@ -24,7 +24,7 @@ open class ImageGen: NSObject {
             
         }
         
-        print("Writing images to " + path)
+        //print("Writing images to " + path)
     }
     
     public func newContext(_ size:CGSize) -> CGContext {
