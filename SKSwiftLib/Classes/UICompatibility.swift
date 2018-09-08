@@ -12,6 +12,8 @@ public typealias UIColor = NSColor
 
 public typealias UIImage = NSImage
 
+public typealias UIFont = NSFont
+
 public extension NSImage {
     public var cgImage: CGImage? {
         var proposedRect = CGRect(origin: .zero, size: size)
